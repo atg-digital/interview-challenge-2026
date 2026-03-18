@@ -48,7 +48,8 @@ function App() {
     try {
       const todo = await createTodo(title);
       setTodos((prev) => [...prev, todo]);
-      setInput("");
+      // Do not clear the input field after adding a todo, to illustrate idempotency issue
+      // setInput("");
     } catch (e) {
       setError(e instanceof Error ? e.message : "Failed to add todo");
     }
