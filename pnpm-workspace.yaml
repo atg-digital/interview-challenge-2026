@@ -4,3 +4,5 @@ packages:
 minimumReleaseAge: 10080 # 7 days
 minimumReleaseAgeExclude:
   - '@atg-digital/*'
+  # Renovate security update: vite@6.4.3
+  - vite@6.4.3
